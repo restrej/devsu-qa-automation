@@ -118,3 +118,18 @@
 2026-06-01 05:47:57,968 | INFO | devsu_e2e | Validando mensaje de confirmación
 2026-06-01 05:47:57,995 | INFO | devsu_e2e | Flujo E2E de compra finalizado exitosamente
 2026-06-01 05:47:58,054 | INFO | devsu_e2e | Postcondición: navegador cerrado correctamente
+2026-06-01 18:15:47,907 | INFO | devsu_e2e | El objetivo del test es validar el flujo E2E de compra en SauceDemo
+2026-06-01 18:15:47,908 | INFO | devsu_e2e | Precondición: iniciando navegador
+2026-06-01 18:15:49,222 | INFO | devsu_e2e | Ingresando usuario estándar
+2026-06-01 18:15:49,330 | INFO | devsu_e2e | Ingresando contraseña
+2026-06-01 18:15:49,414 | INFO | devsu_e2e | Haciendo click en login
+2026-06-01 18:15:49,516 | INFO | devsu_e2e | Agregando producto Sauce Labs Backpack al carrito
+2026-06-01 18:15:49,590 | INFO | devsu_e2e | Agregando producto Sauce Labs Bike Light al carrito
+2026-06-01 18:15:49,649 | INFO | devsu_e2e | Visualizando carrito
+2026-06-01 18:15:49,712 | INFO | devsu_e2e | Iniciando compra
+2026-06-01 18:15:49,773 | INFO | devsu_e2e | Completando formulario de compra
+2026-06-01 18:15:49,969 | INFO | devsu_e2e | Continuando compra
+2026-06-01 18:15:50,039 | INFO | devsu_e2e | Finalizando compra
+2026-06-01 18:15:50,101 | INFO | devsu_e2e | Validando mensaje de confirmación
+2026-06-01 18:15:50,128 | INFO | devsu_e2e | Flujo E2E de compra finalizado exitosamente
+2026-06-01 18:15:50,187 | INFO | devsu_e2e | Postcondición: navegador cerrado correctamente

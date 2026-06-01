@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-06-01T18:18:52.258Z",
+    "end": "2026-06-01T18:18:53.336Z",
+    "duration": 1078,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ce0fa9fc-3c80-447b-b11d-fdae8f25a56b",
+      "title": "",
+      "fullFile": "cypress/e2e/petstore_user.cy.js",
+      "file": "cypress/e2e/petstore_user.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "96eeb50e-c59d-491e-a1e8-9d7bc4b5ff8e",
+          "title": "Swagger Petstore - User API",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Crear, consultar, actualizar, consultar actualizado y eliminar usuario",
+              "fullTitle": "Swagger Petstore - User API Crear, consultar, actualizar, consultar actualizado y eliminar usuario",
+              "timedOut": null,
+              "duration": 1051,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"user\").then(user => {\n  const updatedUser = _objectSpread(_objectSpread({}, user), {}, {\n    firstName: TestData.updatedFirstName,\n    email: TestData.updatedEmail\n  });\n  cy.log(\"Crear usuario\");\n  cy.createUser(user).then(response => {\n    expect(response.status).to.be.oneOf([200, 201]);\n    expect(response.body).to.have.property(\"message\");\n  });\n  cy.log(\"Buscar usuario creado\");\n  cy.getUser(user.username).then(response => {\n    expect(response.status).to.eq(200);\n    expect(response.body.username).to.eq(user.username);\n    expect(response.body.email).to.eq(user.email);\n  });\n  cy.log(\"Actualizar nombre y correo del usuario\");\n  cy.updateUser(user.username, updatedUser).then(response => {\n    expect(response.status).to.eq(200);\n    expect(response.body).to.have.property(\"message\");\n  });\n  cy.log(\"Buscar usuario actualizado\");\n  cy.getUser(user.username).then(response => {\n    expect(response.status).to.eq(200);\n    expect(response.body.username).to.eq(user.username);\n    expect(response.body.firstName).to.eq(TestData.updatedFirstName);\n    expect(response.body.email).to.eq(TestData.updatedEmail);\n  });\n  cy.log(\"Eliminar usuario\");\n  cy.deleteUser(user.username).then(response => {\n    expect(response.status).to.eq(200);\n  });\n  cy.log(\"Validar usuario eliminado\");\n  cy.getUser(user.username).then(response => {\n    expect(response.status).to.eq(404);\n  });\n});",
+              "err": {},
+              "uuid": "fdda0854-df2c-4958-8a9c-e2e7b968d081",
+              "parentUUID": "96eeb50e-c59d-491e-a1e8-9d7bc4b5ff8e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fdda0854-df2c-4958-8a9c-e2e7b968d081"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1051,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true,
+        "reportPageTitle": "Devsu API Automation Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
