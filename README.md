@@ -62,58 +62,6 @@ Ubicación del proyecto:
 
 api-cypress-js/
 
-Estructura del repositorio
-devsu-qa-automation/
-│
-├── e2e-selenium-python/
-│   ├── config/
-│   │   ├── config_local.ini
-│   │   └── web_locators.ini
-│   │
-│   ├── devsu/
-│   │   ├── reports/
-│   │   ├── tests/
-│   │   │   └── Web/
-│   │   │       └── compra/
-│   │   │           └── test_compra_saucedemo.py
-│   │   │
-│   │   └── utilidades/
-│   │       ├── config_utils.py
-│   │       ├── logs_utils.py
-│   │       ├── process_utils.py
-│   │       └── web_utils.py
-│   │
-│   ├── logs/
-│   ├── screenshots/
-│   ├── pytest.ini
-│   ├── requirements.txt
-│   ├── readme.txt
-│   └── conclusiones.txt
-│
-├── api-cypress-js/
-│   ├── collections/
-│   │   └── petstore_user_collection.json
-│   │
-│   ├── cypress/
-│   │   ├── e2e/
-│   │   │   └── petstore_user.cy.js
-│   │   ├── fixtures/
-│   │   │   └── user.json
-│   │   ├── support/
-│   │   │   ├── commands.js
-│   │   │   └── e2e.js
-│   │   ├── screenshots/
-│   │   └── videos/
-│   │
-│   ├── cypress.config.js
-│   ├── package.json
-│   ├── readme.txt
-│   └── conclusiones.txt
-│
-├── README.md
-├── readme.txt
-├── conclusiones.txt
-└── .gitignore
 
 **Ejecución del ejercicio E2E**
 
