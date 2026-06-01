@@ -1,0 +1,8 @@
+Conclusiones - Ejercicio API
+
+1. Se seleccionó la opción 3 de APIs correspondiente a Swagger Petstore User.
+2. Se implementó un flujo CRUD completo sobre el recurso usuario.
+3. La prueba automatizada permite crear, consultar, actualizar, consultar nuevamente y eliminar un usuario.
+4. Se utilizó Cypress con JavaScript, aprovechando cy.request para pruebas de servicios REST.
+5. Se agregó una colección de referencia en formato JSON como insumo adicional del ejercicio.
+6. La automatización valida códigos de respuesta HTTP y campos relevantes del body.

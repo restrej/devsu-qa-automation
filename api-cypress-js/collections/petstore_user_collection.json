@@ -1,0 +1,77 @@
+{
+  "info": {
+    "name": "Swagger Petstore User API - Devsu",
+    "description": "Colección de referencia para el ejercicio API de Swagger Petstore User",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Crear usuario",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/user",
+          "protocol": "https",
+          "host": ["petstore", "swagger", "io"],
+          "path": ["v2", "user"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 123456789,\n  \"username\": \"juan_devsu_user_123456789\",\n  \"firstName\": \"Juan\",\n  \"lastName\": \"Restrepo\",\n  \"email\": \"juan_original@test.com\",\n  \"password\": \"Password123\",\n  \"phone\": \"3001234567\",\n  \"userStatus\": 1\n}"
+        }
+      }
+    },
+    {
+      "name": "Buscar usuario",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/user/juan_devsu_user_123456789",
+          "protocol": "https",
+          "host": ["petstore", "swagger", "io"],
+          "path": ["v2", "user", "juan_devsu_user_123456789"]
+        }
+      }
+    },
+    {
+      "name": "Actualizar usuario",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/user/juan_devsu_user_123456789",
+          "protocol": "https",
+          "host": ["petstore", "swagger", "io"],
+          "path": ["v2", "user", "juan_devsu_user_123456789"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 123456789,\n  \"username\": \"juan_devsu_user_123456789\",\n  \"firstName\": \"Carlos\",\n  \"lastName\": \"Restrepo\",\n  \"email\": \"juan_actualizado@test.com\",\n  \"password\": \"Password123\",\n  \"phone\": \"3001234567\",\n  \"userStatus\": 1\n}"
+        }
+      }
+    },
+    {
+      "name": "Eliminar usuario",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/user/juan_devsu_user_123456789",
+          "protocol": "https",
+          "host": ["petstore", "swagger", "io"],
+          "path": ["v2", "user", "juan_devsu_user_123456789"]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+Conclusiones generales - Devsu QA Automation
+
+1. Se desarrollaron dos ejercicios prácticos independientes dentro de un mismo repositorio, cumpliendo con la solicitud de entregar una sola URL pública de GitHub.
+
+2. Para la automatización E2E se seleccionó SauceDemo, ya que permite validar un flujo completo de compra de forma clara y estable.
+
+3. La solución E2E fue implementada con Selenium WebDriver, Python y Pytest, manteniendo una estructura modular inspirada en frameworks empresariales, con archivos de configuración .ini, clase TestData, funciones reutilizables, logs y reportes HTML.
+
+4. Para el ejercicio de APIs se seleccionó Swagger Petstore User, ya que permite validar operaciones CRUD completas sobre el recurso usuario.
+
+5. La solución API fue implementada con Cypress y JavaScript usando cy.request para ejecutar peticiones REST de tipo POST, GET, PUT y DELETE.
+
+6. Se incluyó una colección de referencia en formato JSON dentro de la carpeta collections, como insumo adicional para el ejercicio API.
+
+7. Cada ejercicio contiene su propio readme.txt con instrucciones específicas de ejecución y su propio conclusiones.txt con hallazgos particulares.
+
+8. Se generaron insumos de soporte como reportes, logs, scripts, archivos de configuración y estructura de carpetas separada para facilitar la revisión del ejercicio.
+
+9. En el ejercicio E2E se identificó que el enunciado menciona el mensaje “GRACIAS POR SU PEDIDO”; sin embargo, la aplicación SauceDemo muestra el mensaje real en inglés “Thank you for your order!”, por lo cual la validación se realizó contra el texto real mostrado por la aplicación.
+
+10. La estructura final permite ejecutar ambos ejercicios de forma independiente y facilita futuras extensiones del framework.
