@@ -1,0 +1,8 @@
+Conclusiones - Automatización E2E
+
+1. Se seleccionó la opción 2 de Automatización E2E con SauceDemo porque permite validar un flujo de compra completo y estable.
+2. La prueba cubre autenticación, selección de productos, visualización del carrito, formulario de compra y confirmación final.
+3. Se implementó una estructura modular inspirada en frameworks empresariales, usando archivos .ini, TestData, setup_class(), utilidades, logs y reportes.
+4. Se utilizó Selenium WebDriver con Python y Pytest.
+5. El enunciado menciona la confirmación “GRACIAS POR SU PEDIDO”; sin embargo, la aplicación SauceDemo muestra el mensaje real en inglés “Thank you for your order!”, por lo tanto la validación se realizó contra el texto real mostrado por la aplicación.
+
