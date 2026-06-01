@@ -1,18 +1,30 @@
-# Python
+# Entornos virtuales Python
 venv/
-__pycache__/
-*.pyc
-.pytest_cache/
+*/venv/
+**/venv/
 
-# Node
+# Node / Cypress
 node_modules/
+*/node_modules/
+**/node_modules/
 
-# IDE
+# PyCharm
 .idea/
 
-# OS
+# Python cache
+__pycache__/
+*/__pycache__/
+**/__pycache__/
+*.pyc
+
+# Pytest cache
+.pytest_cache/
+*/.pytest_cache/
+**/.pytest_cache/
+
+# Sistema operativo
 .DS_Store
 Thumbs.db
 
-# Env
+# Variables de entorno
 .env
