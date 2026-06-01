@@ -6,3 +6,4 @@ Conclusiones - Ejercicio API
 4. Se utilizó Cypress con JavaScript, aprovechando cy.request para pruebas de servicios REST.
 5. Se agregó una colección de referencia en formato JSON como insumo adicional del ejercicio.
 6. La automatización valida códigos de respuesta HTTP y campos relevantes del body.
+7. Durante la ejecución de las pruebas API con Cypress se generó evidencia en video. La carpeta screenshots permanece vacía cuando las pruebas finalizan exitosamente, ya que Cypress solo captura screenshots automáticamente ante fallos. Para complementar la evidencia, se configuró Mochawesome como reporter HTML en la carpeta cypress/reports.
